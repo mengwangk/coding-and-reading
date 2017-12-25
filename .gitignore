@@ -23,6 +23,6 @@ hs_err_pid*
 
 
 .DS_STORE
-modules.xml
-workspace.xml
-myinvestor.finance.iml
+.idea
+
+*.pyc
