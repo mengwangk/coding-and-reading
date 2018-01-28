@@ -1,6 +1,5 @@
-from myinvestorlib import client
+from myinvestorlib import yahoo_finance_scraper
 
-# How to create a Animal object
-cat = client.Animal('Whiskers', 33, 10, 'Meow')
+cat = yahoo_finance_scraper.YahooFinanceScraper('Whiskers', 33, 10, 'Meow')
 
 print(cat.toString())
