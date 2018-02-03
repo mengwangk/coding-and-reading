@@ -79,7 +79,7 @@ def test_run():
     # print(df.ix[0,:])
     
     # Plot normalize
-    #plot_data(normalized_data(df))
+    plot_data(normalized_data(df))
 
 
 if __name__ == "__main__":
