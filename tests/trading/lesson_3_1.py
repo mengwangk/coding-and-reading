@@ -26,7 +26,6 @@ def get_data(symbols, dates):
         df = df.join(df_temp)
         if symbol == 'GOOG':
             df = df.dropna(subset=["GOOG"])
-        # df = df.join(df_temp, how='inner')
 
     return df
 
@@ -41,7 +40,16 @@ def test_run():
     # Get stock data
     df = get_data(symbols, dates)
 
-    print(df.values)
+
+    # nd[row, col]
+    # nd[0,0]
+    # nd[3,2]         # row 4, column 3
+    # nd[0:3, 1:3]    # row 0 to 2, column 1 to 2
+    # nd[:, 3]        # all rows, column 4
+    # nd[-1,1:3]      # -1 last row
+
+
+    print(df.values[0,0])
 
 
 
