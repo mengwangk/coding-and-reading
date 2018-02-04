@@ -7,7 +7,7 @@ def get_max_close(symbol):
     :param symbol: Symbol to search
     :return: Max close p[rice
     """
-    df = pd.read_csv("../data/{}_history.csv".format(symbol))
+    df = pd.read_csv("data/{}_history.csv".format(symbol))
     # return df['Close'].max() # compute and return max
     # return df['Close'].min() # compute and return min
     return df['Volume'].mean() # compute and return mean
