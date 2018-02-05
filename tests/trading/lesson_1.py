@@ -52,7 +52,7 @@ def test_run():
     # plt.title("Google")
     # plt.show() # Show the plot
 
-    df = pd.read_csv("../data/AAPL_HISTORY.csv")
+    df = pd.read_csv("data/AAPL_HISTORY.csv")
     df[['Close', 'Adj Close']].plot()
     plt.show() # Show the plot
 
