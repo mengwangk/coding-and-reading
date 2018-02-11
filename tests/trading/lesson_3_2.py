@@ -31,7 +31,7 @@ def test_run():
     print(np.random.normal(50, 10, size=(2, 3)))  # mean =  50, s.d. = 10
 
     # Random integer
-    print(np.random.randint(10))    # a single integer i [0,10)
+    print(np.random.randint(10))     # a single integer i [0,10)
     print(np.random.randint(0, 10))  # same as above, specifying [low, high] explicit
     print(np.random.randint(0, 10, size=5))  # 5 random integer as a 1D array
     print(np.random.randint(0, 10, size=(2, 3)))  # 2x3 array of random integer
