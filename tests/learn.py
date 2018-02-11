@@ -238,7 +238,7 @@ while (random_num != 15):
     random_num = random.randrange(0,100)
 
 # An iterator for a while loop is defined before the loop
-i = 0;
+i = 0
 while (i <= 20):
     if(i%2 == 0):
         print(i)
