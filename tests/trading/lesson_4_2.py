@@ -1,4 +1,4 @@
-"""Compute statistics"""
+"""Rolling statistics - Bollinger Bands"""
 
 import os
 import pandas as pd
@@ -44,18 +44,25 @@ def test_run():
     dates = pd.date_range('2017-01-01', '2018-01-10')
 
     # Choose stock symbols to read
-    symbols = ['AAPL', 'DXC', 'IBM']
+    symbols = ['AAPL']
 
     # Get stock data
     df = get_data(symbols, dates)
 
-    # print(df)
-    plot_data(df)
+    # Plot data, retain matplotlib axis object
+    ax = df['AAPL'].plot(title="AAPL Rolling mean", label="Stock")
 
-    # Compute global statistics for each stock
-    print(df.mean())
-    print(df.median())
-    print(df.std())
+    # Compute rolling mean using a 20-day window
+    rm_stock = pd.Series(df["AAPL"]).rolling(window=20).mean()
+
+    # Add rolling mean to same plot
+    rm_stock.plot(label="Rolling mean", ax=ax)
+
+    # Add axis labels and legend
+    ax.set_xlabel("Date")
+    ax.set_ylabel("Price")
+    ax.legend(loc="upper left")
+    plt.show()
 
 
 if __name__ == "__main__":
