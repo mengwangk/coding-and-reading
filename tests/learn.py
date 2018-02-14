@@ -268,7 +268,7 @@ print(addNumbers(1, 4))
 # print(sumNum)
 
 # If you define a variable outside of the function it works every place
-newNum = 0;
+newNum = 0
 def subNumbers(fNum, sNum):
     newNum = fNum - sNum
     return newNum
