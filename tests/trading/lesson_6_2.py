@@ -11,7 +11,7 @@ def test_run():
     dates = pd.date_range('2017-01-01', '2018-01-10')
 
     # Choose stock symbols to read
-    symbols = ['SPY']
+    symbols = ['SPY', 'AAPL']
 
     # Get stock data
     df = get_data(symbols, dates)
@@ -22,22 +22,11 @@ def test_run():
     # plot_data(daily_returns, title="Daily returns", ylabel="Daily returns")
 
     # Plot a histogram
-    daily_returns.hist(bins=20)
-    # plt.show()
-
-    # Get mean and standard deviation
-    mean = daily_returns['SPY'].mean()
-    print('mean = ', mean)
-    std = daily_returns['SPY'].std()
-    print('std = ', std)
-
-    plt.axvline(mean, color='w', linestyle='dashed', linewidth=2)
-    plt.axvline(std, color='r', linestyle='dashed', linewidth=2)
-    plt.axvline(-std, color='r', linestyle='dashed', linewidth=2)
+    daily_returns['AAPL'].hist(bins=20, label='AAPL')
+    daily_returns['SPY'].hist(bins=20, label='SPY')
+    plt.legend(loc='upper right')
     plt.show()
 
-    # Compute kurtosis
-    print(daily_returns.kurtosis())
 
 
 if __name__ == "__main__":
