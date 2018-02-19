@@ -49,8 +49,8 @@ def test_run():
     # Get stock data
     df = get_data(symbols, dates)
 
-    # print(df)
-    plot_data(df)
+    print(df)
+    #plot_data(df)
 
     # Compute global statistics for each stock
     print(df.mean())
