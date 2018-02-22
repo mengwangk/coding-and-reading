@@ -49,3 +49,8 @@ def compute_daily_returns(df):
     daily_returns = (df / df.shift(1)) - 1
     daily_returns.ix[0, :] = 0  # set daily returns for wo 0 to 0
     return daily_returns
+
+
+def normalized_data(df):
+    """Normalize stock prices using the 1st row of the dataframe"""
+    return df/df.ix[0,:]

@@ -1,9 +1,10 @@
 """Fill missing values"""
 
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
 import os
+
+import matplotlib.pyplot as plt
+import pandas as pd
+
 
 def fill_missing_values(df_data):
     """Fill missing values in data frame, in place."""
