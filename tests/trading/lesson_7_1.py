@@ -1,4 +1,17 @@
-"""Scatterplots."""
+"""
+Sharpe ratio - Risk adjusted return
+
+- daly returns
+- cumulative returns
+- average returns
+- sharpe ratio
+
+k * mean(_daily_rets_ - _daily_rf_) / std(_daily_rets_)
+
+where k = sqrt(252) for daily sampling.
+
+
+"""
 
 import pandas as pd
 import matplotlib.pyplot as plt
