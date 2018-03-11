@@ -41,4 +41,16 @@ k * mean(_daily_rets_ - _daily_rf_) / std(_daily_rets_)
 
 where k = sqrt(252) for daily sampling.
 
+### Trading algorithm
+- OHLCV
+- Live Portfolio
+- Orders
+- Target portfolio
+    - Portfolio optimizer
+    - N-day forecast (machine learning)
+        - Information feed
+        - OHLCV
+    - Current portfolio
+    - Historical price data - OHLCV
+- Market
 
