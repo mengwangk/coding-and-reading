@@ -18,7 +18,7 @@ PV = FV / (1+IR)^i
 5% = 1.00 / (1+0.05) = $0.95
 
 
-## Instrinsic value
+## Intrinsic value
 
 Discount rate is higher if more risky
 
@@ -36,4 +36,13 @@ For instance, in this case we want to sum up all future dividends - equal to a c
 
 
 ## Book value
+- Total assets minus intangible assets and liabilities.
 
+
+## Market capitalization
+market cap = #shares * price
+
+## Why information affects stock price
+- CEO ill - company
+- Island soil bad - sector
+- Sea level rising - market
