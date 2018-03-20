@@ -34,6 +34,7 @@ Interest Rate and Discount Rate are terms that refer to essentially the same qua
 
 For instance, in this case we want to sum up all future dividends - equal to a constant ($1 or FV) every year.
 
+Intrinsic value  = FV / DR
 
 ## Book value
 - Total assets minus intangible assets and liabilities.
