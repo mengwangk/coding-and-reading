@@ -61,7 +61,7 @@ $$ BB[t] =  (price[t] - SMA[t]) \div 2 * std[t] $$
 
 * SMA  -0.5 to 0.5
 * momentum  -0.5 to 0.5
-* BB -.10 to 1.0
+* BB -1.0 to 1.0
 * PE ratio 1 to 300
 
 $$ normed = (value - mean) \div values.std() $$
