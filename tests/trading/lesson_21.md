@@ -33,7 +33,7 @@ learner =
 ```python
 
 class LinRegLearner::
-    def __iniit__():
+    def __init__():
         pass
 
     def train(x,y):
