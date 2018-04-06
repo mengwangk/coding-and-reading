@@ -9,7 +9,7 @@
     * less overfitting
     * tastes great
 
-## How to bu8ld an ensemble
+## How to build an ensemble
 
 * train several parameterized polynomials of differing degree
 * train several KNN models using different subsets of data

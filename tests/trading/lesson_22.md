@@ -1,4 +1,4 @@
-# Asessing a learning algorithm
+# Assessing a learning algorithm
 
 ## Closer look at KNN solutions
 
