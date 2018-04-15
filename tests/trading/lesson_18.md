@@ -27,7 +27,7 @@ Bet N coins
 * Win: now have 2xN
 * Lose: now have 0
 
-### Casion
+### Casino
 
 * 1000 tables
 * 1000 tokens
