@@ -29,3 +29,5 @@ hs_err_pid*
 
 ud120-projects
 materials/machine learning/text mining/Amazon_Unlocked_Mobile.csv
+
+tf_logs/
